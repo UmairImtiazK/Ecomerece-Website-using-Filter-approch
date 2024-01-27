@@ -1,0 +1,22 @@
+.gridProductLayout {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,23%);
+    gap: 4rem;
+    margin-left: 30rem;
+}
+
+@media screen and (max-width: 1250px) {
+    .gridProductLayout {
+        grid-template-columns: repeat(2,23%);
+        column-gap: 15rem;
+    }
+
+    
+}
+
+@media screen and (max-width: 800px) {
+    .gridProductLayout {
+        grid-template-columns: repeat(1,23%);
+    }
+}

@@ -1,0 +1,132 @@
+.SideBar {
+    width: 15%;
+    padding: 2rem 3rem 0 4rem;
+    position: fixed;
+    top: .2rem;
+    border-right: 2px solid #f3f3f3;
+}
+
+.chartCont {
+    margin-bottom: 6rem;
+    text-align: center;
+}
+.chartCont .btn {
+    background-color: transparent;
+    border: none;
+    outline: 0;
+}
+
+.chartCont .icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.category h1 {
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+
+
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+    top: 8px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+  }
+
+@media screen and (max-width: 1100px) {
+    .SideBar {
+        width: 17%;
+        padding: 1rem 0 1rem 1rem;
+    }
+
+    .chartCont {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .SideBar {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        font-size: 1rem;
+    }
+
+    .checkmark  {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .container .checkmark:after {
+        left: 5px;
+        top: 5px;
+    }
+
+    .category h1 {
+        font-size: 1.3rem;
+    }
+}

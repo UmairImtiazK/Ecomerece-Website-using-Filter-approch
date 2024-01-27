@@ -1,0 +1,36 @@
+.mainBar {
+    width: 80%;
+    display: flex;
+    margin-left: 30rem;
+    padding: 20px 0 50px 0;
+    flex-direction: column;
+}
+
+.recomendedBtns {
+    display: flex;
+    gap: 10px;
+}
+
+.recomendedBtns .btn {
+    padding: 8px 15px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    outline: 0;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .mainBar {
+        margin-left: 25rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .mainBar {
+        margin-left: 20rem;
+    }
+}

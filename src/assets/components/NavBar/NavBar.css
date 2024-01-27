@@ -1,0 +1,56 @@
+.NavBar {
+    width: 96.2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin-left: 3.2rem;
+    border-bottom: 2px solid #f3f3f3;
+    position: relative;
+}
+
+.searchBox .Input {
+    background-color: #f7f6f6;
+    padding: 12px 20px;
+    border: none;
+    outline: 0;
+}
+
+.NavBar .NavComp {
+    display: flex;
+    gap: 30px;
+}
+
+.NavComp .btn {
+    background-color: transparent;
+    outline: 0;
+    border: none;
+}
+
+.NavComp .icon {
+    width: 2rem;
+    height: 2rem;
+    opacity: .7;
+}
+
+@media screen and (max-width: 800px ){
+    .NavBar {
+        justify-content: end;
+    }
+
+    .searchBox .Input {
+        padding: 10px 5px;
+    }
+
+    .NavBar .NavComp {
+        gap: 10px;
+        margin-left: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .searchBox .Input {
+        font-size: 1rem;
+    }
+}
